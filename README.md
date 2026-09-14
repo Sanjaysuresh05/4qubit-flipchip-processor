@@ -8,9 +8,10 @@ QuantumPro puts the qubits on one die and the control/readout routing on the
 other, so isolation is bought with vertical separation rather than with longer,
 more congested in-plane routing.
 
-Reported result: crosstalk reduced from ~−37 dB to ~−55 dB after geometry
-optimisation, with dispersive shift χ ranging 0.43–1.03 MHz across Q1–Q4 in the
-final EM extraction.
+Reported result: simulated T1 ranges 3.52–4.61 µs across Q1–Q4, and qubit–qubit
+Cross-Kerr is suppressed below what the simulation resolves — the off-diagonal
+qubit terms are blank in the full-EM extraction and of order 1e-8 MHz in the EPR
+extraction.
 
 This repository collects the EM verification figures for that design.
 
@@ -97,7 +98,18 @@ qubit modes (4.52–5.89 GHz).
 
 `Keysight ADS QuantumPro` · `Ansys HFSS` · `Ansys Q3D` · `KLayout` · `GDS export`
 
-Material: aluminium on high-resistivity silicon. Readout: λ/2 CPW resonators.
+Material: aluminium on high-resistivity silicon. Readout: λ/2 CPW resonators —
+each meander runs from its transmon cross at one end to the feedline coupler at
+the other, with neither end shorted to ground.
+
+## Sources
+
+Every figure here is a screenshot from this design's own Keysight ADS
+QuantumPro workspace. Parameter definitions and the analytic design method
+follow the internship report, *Chapter 4 — Qubit Designs* (Design 5, the
+four-qubit flip-chip); extraction procedure follows *Quantum Parameter
+Extraction in QuantumPro*. Nothing in this repository is taken from a
+measurement: every number is a simulation output.
 
 ---
 
