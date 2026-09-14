@@ -3,13 +3,14 @@
 > **VLSID Design Contest 2026 — Finalist**
 
 A 3D-integrated qubit processor designed to cut crosstalk without adding routing
-congestion. A Q-chip/C-chip flip-chip architecture built in Qiskit Metal puts the
-qubits on one die and the control/readout routing on the other, so isolation is
-bought with vertical separation rather than with longer, more congested in-plane
-routing.
+congestion. A Q-chip/C-chip flip-chip architecture built in Keysight ADS
+QuantumPro puts the qubits on one die and the control/readout routing on the
+other, so isolation is bought with vertical separation rather than with longer,
+more congested in-plane routing.
 
-Reported result: coherence improved from ~3.02 µs to ~4.94 µs, with crosstalk
-reduced from ~−37 dB to ~−55 dB after geometry optimisation.
+Reported result: crosstalk reduced from ~−37 dB to ~−55 dB after geometry
+optimisation, with dispersive shift χ ranging 0.43–1.03 MHz across Q1–Q4 in the
+final EM extraction.
 
 This repository collects the EM verification figures for that design.
 
@@ -24,7 +25,7 @@ This repository collects the EM verification figures for that design.
 | | |
 |---|---|
 | ![Schematic](figures/Schematic.png) | ![Layout](figures/Layout.png) |
-| Circuit schematic | Qiskit Metal layout — four transmons, meandered readout resonators, shared feedline |
+| Circuit schematic | Keysight ADS QuantumPro layout — four transmons, meandered readout resonators, shared feedline |
 
 ## 3. Flip-chip stack
 
@@ -94,7 +95,7 @@ qubit modes (4.52–5.89 GHz).
 
 ## Tooling
 
-`Qiskit Metal` · `Keysight ADS QuantumPro` · `Ansys HFSS` · `Ansys Q3D` · `KLayout` · `GDS export`
+`Keysight ADS QuantumPro` · `Ansys HFSS` · `Ansys Q3D` · `KLayout` · `GDS export`
 
 Material: aluminium on high-resistivity silicon. Readout: λ/2 CPW resonators.
 
