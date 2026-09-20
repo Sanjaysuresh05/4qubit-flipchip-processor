@@ -96,7 +96,7 @@ qubit modes (4.52–5.89 GHz).
 
 ## Tooling
 
-`Keysight ADS QuantumPro` · `Ansys HFSS` · `Ansys Q3D` · `KLayout` · `GDS export`
+`Keysight ADS QuantumPro` · `Ansys Q3D` · `KLayout` · `GDS export`
 
 Material: aluminium on high-resistivity silicon. Readout: λ/2 CPW resonators —
 each meander runs from its transmon cross at one end to the feedline coupler at
